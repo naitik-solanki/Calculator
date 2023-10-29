@@ -1,0 +1,17 @@
+In the deploy yaml file we will add the following:
+---
+- name: Pull Docker Image of Calculator
+  hosts: localhost
+  vars:
+    ansible_python_interpreter: /opt/homebrew/bin/python3
+  tasks:
+    - name: Pull image
+      docker_image:
+        name: naitik1/calculator:latest
+        source: pull
+    - name: Start docker service
+      service:
+        name: docker
+        state: started
+    - name: Running container
+      shell: docker create -it --name Calculator naitik1/calculator

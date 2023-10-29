@@ -1,4 +1,4 @@
-FROM ubuntu:latest
-LABEL authors="naitiksinhsolanki"
-
-ENTRYPOINT ["top", "-b"]
+FROM openjdk:11
+COPY ./target/SPE_mini_project-1.0-SNAPSHOT-jar-with-dependencies.jar ./
+WORKDIR ./
+CMD ["java","-cp"," SPE_mini_project-1.0-SNAPSHOT-jar-with-dependencies.jar","org.example.Main"]

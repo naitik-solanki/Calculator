@@ -1,4 +1,3 @@
-In the deploy yaml file we will add the following:
 ---
 - name: Pull Docker Image of Calculator
   hosts: localhost

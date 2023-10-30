@@ -12,6 +12,5 @@
       service:
         name: docker
         state: started
-        when: ansible_facts['os_family'] == "Debian"
     - name: Running container
       shell: docker create -it --name Calculator naitik1/calculator

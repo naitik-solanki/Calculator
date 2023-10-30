@@ -13,4 +13,4 @@
         name: docker
         state: started
     - name: Running container
-      shell: docker create -it --name calculator naitik1/calculator
+      shell: docker create -it --name Calculator naitik1/calculator

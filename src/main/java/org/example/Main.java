@@ -10,7 +10,7 @@ public class Main {
     public int multiply(int a,int b){
         return a*b;
     }
-    public double division(int a,int b){
+    public double divide(int a,int b){
         if(b==0){
             return 1e9;
         }
@@ -58,7 +58,7 @@ public class Main {
                     a= sc.nextInt();
                     b= sc.nextInt();
                     double out;
-                    out = calculator.division(a,b);
+                    out = calculator.divide(a,b);
                     if(out==1e9){
                         System.out.println("Division by Zero Error Found !!");
                     }

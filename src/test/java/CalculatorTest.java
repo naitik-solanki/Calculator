@@ -13,7 +13,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void addNumber_test_right(){
+    public void add_test_right(){
         int a = 3;
         int b = 2;
         int groundTruth = 5;
@@ -21,7 +21,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void addNumber_test_wrong(){
+    public void add_test_wrong(){
         int a = 2;
         int b = 2;
         int groundTruth = 5;
@@ -29,7 +29,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void subNumber_test_right(){
+    public void subtract_test_right(){
         int a = 4;
         int b = 2;
         int groundTruth = 2;
@@ -37,7 +37,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void subNumber_test_wrong(){
+    public void subtract_test_wrong(){
         int a = 5;
         int b = 2;
         int groundTruth = 5;
@@ -45,7 +45,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void mulNumber_test_right(){
+    public void multiply_test_right(){
         int a = 2;
         int b = 2;
         int groundTruth = 4;
@@ -53,7 +53,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void mulNumber_test_wrong(){
+    public void multiply_test_wrong(){
         int a = 3;
         int b = 2;
         int groundTruth = 5;
@@ -61,26 +61,26 @@ public class CalculatorTest {
     }
 
     @Test
-    public void divNumber_test_right(){
+    public void divide_test_right(){
         int a = 4;
         int b = 2;
         double groundTruth = 2.0;
-        Assert.assertEquals(groundTruth, calculator.division(a, b), dx);
+        Assert.assertEquals(groundTruth, calculator.divide(a, b), dx);
     }
 
     @Test
-    public void divNumber_test_wrong(){
+    public void divide_test_wrong(){
         int a = 12;
         int b = 2;
         double groundTruth = 3;
-        Assert.assertNotEquals(groundTruth, calculator.division(a, b), dx);
+        Assert.assertNotEquals(groundTruth, calculator.divide(a, b), dx);
     }
 
     @Test
-    public void divNumber_test_wrong_io(){
+    public void divide_test_wrong_io(){
         int a = 1;
         int b = 0;
         double groundTruth = 1e9;
-        Assert.assertEquals(groundTruth, calculator.division(a, b), dx);
+        Assert.assertEquals(groundTruth, calculator.divide(a, b), dx);
     }
 }

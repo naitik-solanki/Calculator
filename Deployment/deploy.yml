@@ -9,6 +9,7 @@
         name: naitik1/calculator:latest
         source: pull
     - name: Start docker service
+      when: ansible_facts['os_family'] == "Debian"
       service:
         name: docker
         state: started

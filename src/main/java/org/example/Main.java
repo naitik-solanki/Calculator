@@ -21,6 +21,7 @@ public class Main {
         Main calculator = new Main();
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to Calculator");
+        //hello
         int choice;
         do{
             System.out.println("Choose one of the following 5 options (enter the number of the option to choose the option");
